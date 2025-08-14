@@ -1,0 +1,1 @@
+This folder contains solutions to problems I have solved on LeetCode.
