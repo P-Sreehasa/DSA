@@ -1,12 +1,12 @@
 class Solution {
     public int[] getConcatenation(int[] nums) {
-        int len = nums.length;
-        int arr[] = new int[len * 2];
-        for(int i = 0; i < len; i++){
-            arr[i] += nums[i];
-            arr[i + len] += nums[i];
+        int n = nums.length;
+        int ans[] = new int[2 * n];
+        for(int i = 0; i < n; i++){
+            ans[i] = nums[i];
+            ans[i + n] = nums[i];
         }
-        return arr;
+        return ans;
     }
 }
 
@@ -14,13 +14,13 @@ class Solution {
 /*
 class Solution {
     public int[] getConcatenation(int[] nums) {
-        int len = nums.length;    // Calculate the length of the original array
-        int arr[] = new int[len * 2];    // Array to store the concatenated elements
-        for(int i = 0; i < len; i++){    // For each value in the original array:
-            arr[i] = nums[i];    // Assign it to the new array (makes up the 1st half, upto len - 1)
-            arr[i + len] = nums[i];    // For the other half, assign the original array's elements to the new array
+        int n = nums.length;    // Calculate the length of the array
+        int ans[] = new int[2 * n];    // Create a new array to store the result
+        for(int i = 0; i < n; i++){    // For each index of the nums array:
+            ans[i] = nums[i];    // Store the values of the nums array in the 1st half 
+            ans[i + n] = nums[i];    // Store the nums array values again in the 2nd half
         }
-        return arr;    // Return the final result
+        return ans;    // Return the resultant array as the concatenation of the 1st array twice
     }
 }
 */
