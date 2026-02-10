@@ -9,7 +9,7 @@ class Solution {
 /*
 class Solution {
     public boolean canWinNim(int n) {
-        return n % 4 != 0;    // If n is a multiple of 4, it's a win
+        return n % 4 != 0;    // If n is a multiple of 4, then it is a win
     }
 }
 */
